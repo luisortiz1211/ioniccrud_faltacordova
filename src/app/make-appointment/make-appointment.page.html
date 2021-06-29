@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Booking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list lines="full">
+<form action=""[formGroup]="bookingForm" (ngSubmit)="formSubmit()">
+  <ion-item>
+    <ion-label position="floating" >Name</ion-label>
+    <ion-input formControlName="name" type="text" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" >Email</ion-label>
+    <ion-input formControlName="name" type="text" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" >Mobile</ion-label>
+    <ion-input formControlName="name" type="text" required></ion-input>
+  </ion-item>
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" color="primary" shape="full" expand="block">Book Appointmet</ion-button>
+    </ion-col>
+  </ion-row>
+</form>
+</ion-list>
+</ion-content>
